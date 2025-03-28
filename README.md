@@ -16,7 +16,7 @@ This database has a table called "tipos\_de\_zapatos" which contains the followi
 
 # Creation of the Data Base - Taller\_2
 
-\*Here we are going to share the creation of this database:
+\Here we are going to share the creation of this database:
 
 ```
 CREATE SCHEMA 'exampledbu';

@@ -24,7 +24,7 @@ CREATE SCHEMA 'exampledbu';
 
 # Use the Data Base - Taller\_2
 
-\*Here we are going to enter the database ExampleDBU to be able to add data and search for information.
+\Here we are going to enter the database ExampleDBU to be able to add data and search for information.
 
 ```
 USE ExampleDBU;
@@ -32,7 +32,7 @@ USE ExampleDBU;
 
 # Adding TABLES to the Data Base - Taller\_2
 
-\*Here we are going to create the table of the database to store the shoe information.
+\Here we are going to create the table of the database to store the shoe information.
 
 ```
 CREATE TABLE tipos_de_zapatos (
@@ -57,7 +57,7 @@ ADD COLUMN calidad VARCHAR(20);
 
 # Adding data to our Data Base - Taller\_2
 
-\*Here we are adding the information for each column:
+\Here we are adding the information for each column:
 
 ```
 INSERT INTO tipos_de_zapatos (id, nombre, material, precio, importado, utilidad, cantidad, calidad)
@@ -71,37 +71,37 @@ VALUES
 
 # 5 Instructions to search specific information on our database - Taller\_2
 
-\*Show all the data of each column.
+\Show all the data of each column.
 
 ```
 SELECT * FROM tipos_de_zapatos;
 ```
 
-\*Show imported shoes with more than 30 units in stock.
+\Show imported shoes with more than 30 units in stock.
 
 ```
 SELECT * FROM tipos_de_zapatos WHERE importado = 1 AND cantidad > 30;
 ```
 
-\*Show shoes with quality 'alta' or 'media'.
+\Show shoes with quality 'alta' or 'media'.
 
 ```
 SELECT * FROM tipos_de_zapatos WHERE calidad = 'alta' OR calidad = 'media';
 ```
 
-\*Show shoes that are not imported and either have more than 40 or less than 25 units.
+\Show shoes that are not imported and either have more than 40 or less than 25 units.
 
 ```
 SELECT * FROM tipos_de_zapatos WHERE importado = 0 AND (cantidad > 40 OR cantidad < 25);
 ```
 
-\*Show shoes with high quality that are either not imported or have more than 30 units.
+\Show shoes with high quality that are either not imported or have more than 30 units.
 
 ```
 SELECT * FROM tipos_de_zapatos WHERE calidad = 'alta' AND (importado = 0 OR cantidad > 30);
 ```
 
-\*Show shoes that are used for industrial purposes.
+\Show shoes that are used for industrial purposes.
 
 ```
 SELECT * FROM tipos_de_zapatos WHERE utilidad = 'industrial';
